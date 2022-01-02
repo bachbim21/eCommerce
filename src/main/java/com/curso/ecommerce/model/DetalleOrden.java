@@ -19,7 +19,7 @@ public class DetalleOrden {
     @OneToOne
     private Orden orden;
 
-    @OneToOne
+    @ManyToOne
     private Producto producto;
 
     public DetalleOrden(Long id, String nombre, double cantidad, double precio, double total, Orden orden, Producto producto) {
